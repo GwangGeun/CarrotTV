@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#E3E3E3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/모바일지갑"
+        android:textSize="35sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="29dp"
+        android:textColor="#353535"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView15"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginTop="41dp"
+        android:id="@+id/tableLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/textView101"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#4948FF"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="@string/지갑주소" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            >
+
+            <TextView
+                android:id="@+id/wallet_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:text="@string/확인중" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            >
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#4948FF"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="@string/보유중인토큰갯수" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            >
+
+            <TextView
+                android:id="@+id/my_token"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:text="@string/확인중" />
+
+        </TableRow>
+
+
+
+
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/editText_getToken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tableLayout"
+        android:layout_below="@+id/tableLayout"
+        android:layout_marginTop="57dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/개수를입력"
+        android:layout_toStartOf="@+id/btn_tokenRequest" />
+
+    <Button
+        android:id="@+id/btn_tokenRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/요청하기"
+        android:layout_alignBottom="@+id/editText_getToken"
+        android:layout_alignEnd="@+id/tableLayout" />
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="330sp"
+        android:layout_height="220sp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5sp"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/preview_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/생_방송중입니다"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5sp"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/preview_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:text="@string/JD_이제동"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5sp"
+            tools:ignore="SmallSp" />
+
+        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:id="@+id/player_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:resize_mode="fill"
+            app:use_controller="false">
+
+        </com.google.android.exoplayer2.ui.SimpleExoPlayerView>
+
+    </LinearLayout>
+</LinearLayout>

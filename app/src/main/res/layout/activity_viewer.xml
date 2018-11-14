@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:id="@+id/player_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:use_controller="false"
+            app:resize_mode="fill"
+            >
+
+        </com.google.android.exoplayer2.ui.SimpleExoPlayerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350sp"
+        android:orientation="vertical"
+        android:layout_above="@+id/linear_viewer"
+        android:layout_alignParentStart="true">
+
+        <ListView
+            android:id="@+id/viewer_listview"
+            android:layout_width="match_parent"
+            android:layout_height="270sp"
+            android:divider="#00000000"
+            android:transcriptMode="alwaysScroll"
+            android:background="#00000000" />
+
+        <TextView
+            android:id="@+id/empty_space"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linear_viewer">
+
+        <Button
+            android:id="@+id/btn_ballon"
+            android:layout_width="0sp"
+            android:layout_height="30sp"
+            android:layout_marginLeft="3sp"
+            android:layout_marginRight="3sp"
+            android:layout_weight="0.1"
+            android:background="@drawable/box"
+             />
+
+        <EditText
+            android:id="@+id/editText_chat02"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:textColor="#FFFFFF"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            android:hint="채팅 메세지를 입력해주세요." />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:text="전송" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+

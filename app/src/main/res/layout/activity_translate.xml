@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:textSize="25sp"
+        android:textColor="#333333"
+        android:text="@string/인식된글자" />
+
+    <TextView
+        android:id="@+id/after_translate"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_marginTop="75dp"
+        android:background="#E3E3E3"
+        android:text="@string/번역중입니다"
+        android:layout_below="@+id/before_translate"
+        android:layout_alignStart="@+id/before_translate"
+        android:layout_marginEnd="10sp"
+        />
+
+    <TextView
+        android:id="@+id/before_translate"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:layout_marginEnd="10sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="50dp"
+        android:background="#E3E3E3"
+        android:text="@string/hello" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/after_translate"
+        android:layout_below="@+id/before_translate"
+        android:layout_marginTop="57dp"
+        android:textColor="#333333"
+        android:text="@string/번역후" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/before_translate"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="32dp"
+        android:textColor="#333333"
+        android:text="@string/번역전" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30sp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/arrow"
+        android:layout_below="@+id/before_translate"
+        android:rotation="180"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/nothing" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginBottom="23dp">
+
+        <Button
+            android:id="@+id/btn_save02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="10sp"
+            android:text="@string/저장하기"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btn_back02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/돌아가기"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+</RelativeLayout>

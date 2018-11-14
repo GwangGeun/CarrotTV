@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="330sp"
+        android:layout_height="150sp"
+        android:orientation="vertical"
+        android:background="#D4F4FA"
+        >
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30sp" />
+
+        <EditText
+            android:id="@+id/custom_title01"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/방송제목"
+            android:inputType="textPersonName"
+            android:maxLength="15"
+            android:scrollHorizontally="false"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/custom_start01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/방송시작" />
+
+            <Button
+                android:id="@+id/custom_back01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/돌아가기" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
