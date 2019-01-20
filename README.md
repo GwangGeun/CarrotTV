@@ -1,6 +1,6 @@
 # CarrotTV
 Live Streaming Android App 
 
-If you want to see this project, visit the below link.
+Please click the below link, if you wonder this project.
 
 http://hoauys.tistory.com/1
